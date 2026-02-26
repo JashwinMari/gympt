@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-background: #03001C;
+    --color-texts: #e6e6e7;
+    --color-light: #b8ffee;
+    --background-image-gym-bg: url("/gym_bg.png");
+}
+
+@layer base {
+    body {
+        @apply bg-background text-texts;
+    }
+
+    h1 {
+        @apply text-5xl max-w-2xl text-center;
+        font-family: "Rubik Distressed", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    h2 {
+        @apply text-2xl max-w-2xl;
+        font-family: "Rubik Distressed", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@layer components {
+    .rubikFont {
+        font-family: "Rubik Distressed", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@utility text-gradient {
+    @apply bg-linear-to-r from-[#90ded1] to-[#ebf597] bg-clip-text text-transparent;
+}
