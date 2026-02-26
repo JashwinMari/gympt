@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-    --color-background: #03001C;
+    --color-background: black;
     --color-texts: #e6e6e7;
     --color-light: #b8ffee;
     --background-image-gym-bg: url("/gym_bg.png");
